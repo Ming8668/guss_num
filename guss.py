@@ -3,9 +3,16 @@
 # 猜對的話 印出"猜對了!!"
 # 猜錯的話 要印出 比答案大/小
 # 延伸:猜數了第幾次
+# 延伸:請使用者自訂起始範圍
 
 import random
-r = random.randint(0,100)
+
+start = input("請輸入起始數字:")
+end = input("請輸入結束範圍:")
+start = int(start)
+end = int(end)
+
+r = random.randint(start, end)
 # print(r)
 count = 0
 
